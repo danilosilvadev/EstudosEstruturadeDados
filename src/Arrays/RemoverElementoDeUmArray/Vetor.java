@@ -41,7 +41,7 @@ public class Vetor {
         this.tamanho--;
     }
 
-    //2º meio - Bloco que remove elemento sem saber a posição
+    //2º meio - Bloco que busca elemento sem saber a posição
     public int busca(String elemento) {
         for (int i = 0; i < this.tamanho; i++) {
             if (this.elementos[i].equals(elemento)) {
