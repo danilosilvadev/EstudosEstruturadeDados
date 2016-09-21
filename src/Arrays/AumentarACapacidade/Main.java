@@ -1,18 +1,18 @@
-package MovendoArrays;
+package Arrays.AumentarACapacidade;
+
 
 /* OVERVIEW:
 
-  Esse código é um código que adiciona
- elementos a um array em qualquer posição
- sem excluir os outros elementos,
- movendo-se assim pra frente os outros.
+  Esse código aumenta a capacidade
+  de um array. Para visualizar o funcionamento
+  é necessário executar em modo debug.
 
   */
 public class Main {
 
     public static  void  main(String[] args){
 
-        Vetor vetor = new Vetor(10);
+        Vetor vetor = new Vetor(5);
 
         vetor.adiciona("B");
         vetor.adiciona("C");
