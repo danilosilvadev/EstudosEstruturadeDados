@@ -5,8 +5,8 @@ package Stacks;
  */
 public class EstruturaEstatica<T> {
 
-    private T[] elementos;
-    private int tamanho;
+    protected T[] elementos;
+    protected int tamanho;
 
 
     public EstruturaEstatica(int capacidade) {
@@ -50,7 +50,7 @@ public class EstruturaEstatica<T> {
         return true;
     } //Aumentar a capacidade de um array
 
-    private void aumentaCapacidade() {
+    protected void aumentaCapacidade() {
         if (this.tamanho == this.elementos.length) {
             //Novamente um cast na classe Object.
             T[] elementosNovos = (T[]) new Object[this.elementos.length * 2];
@@ -66,6 +66,10 @@ public class EstruturaEstatica<T> {
         return this.tamanho;
     }
 
+    //Verifica se a pilha está vazia
+    public boolean estaVazia(){
+        return tamanho == 0;
+    }
     /*Esse método substitui o ponteiro da alocação na memória
     criado pelo array pela string correspondente dos elementos. */
 
