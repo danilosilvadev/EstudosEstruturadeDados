@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Vetor vetor = new Vetor(5);
+        Vetor vetor = new Vetor(2);
 
         //Criando array com vários tipos de dados e passando para o construtor
         Contato c1  = new Contato("Contato1", "1234-5678", "contato1@email.com");

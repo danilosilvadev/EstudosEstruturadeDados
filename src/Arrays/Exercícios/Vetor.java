@@ -20,6 +20,8 @@ public class Vetor<T> {
 
     }
 
+    public Vetor(){this(10);}
+
     //Daqui por diante é só substituir tudo que teria Object ou String etc, por T.
 
     //Método que adiciona elemento
