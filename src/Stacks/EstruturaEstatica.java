@@ -70,6 +70,14 @@ public class EstruturaEstatica<T> {
     public boolean estaVazia(){
         return tamanho == 0;
     }
+
+    //Aqui eu limpo td o vetor
+    public void limpar() {
+        while (this.tamanho > 0) {
+            this.tamanho--;
+        }
+    }
+
     /*Esse método substitui o ponteiro da alocação na memória
     criado pelo array pela string correspondente dos elementos. */
 
