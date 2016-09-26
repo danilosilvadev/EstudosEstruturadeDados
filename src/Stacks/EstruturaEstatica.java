@@ -78,6 +78,21 @@ public class EstruturaEstatica<T> {
         }
     }
 
+    //Aqui vai o bloco que remove um elemento na posição i
+    public void remove(int posicao) {
+        if (!(posicao >= 0 && posicao < tamanho)) {
+
+            throw new IllegalArgumentException("Posição Inválida");
+        }
+
+        for (int i = posicao; i < this.tamanho; i++) {
+
+            this.elementos[i] = this.elementos[i + 1];
+
+        }
+        this.tamanho--;
+    }
+
     /*Esse método substitui o ponteiro da alocação na memória
     criado pelo array pela string correspondente dos elementos. */
 
