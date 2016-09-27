@@ -1,8 +1,6 @@
 package Queues.Exercícios;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 /**
  * Created by sg-0036936 on 26/09/2016.
@@ -27,7 +25,21 @@ public class E02 {
         final int prioritaria = 1;
         final int normal = 2;
 
-               pessoas.add(new Documento(prioritaria, "Vikka"));
+        int contador;
+
+        //Criar duas listas Queues normais uma
+        // prioritária e outra normal e por os obj1 e obj2 aqui dentro
+        for (contador = 0; contador < 4; contador++) {
+            if (contador > 3) {
+                //Obj1
+                contador = 0;
+            } else {
+                //Obj2
+            }
+        }
+
+
+        pessoas.add(new Documento(prioritaria, "Vikka"));
         pessoas.add(new Documento(normal, "Jemma"));
         pessoas.add(new Documento(normal, "Sid"));
         pessoas.add(new Documento(prioritaria, "Ayunsabah"));
@@ -40,5 +52,8 @@ public class E02 {
 
 
     }
+
+
+
 
 }
