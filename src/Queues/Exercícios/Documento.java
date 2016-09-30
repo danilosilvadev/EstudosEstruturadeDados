@@ -5,11 +5,13 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Created by sg-0036936 on 26/09/2016.
  */
-public class Documento implements Comparable<Documento> {
+public class Documento {
 
     private String nome;
     private int folhas;
     private int prioridade;
+    int senhaNormal;
+    String senhaPrioritaria;
 
     public Documento(int prioridade, String nome) {
         this.nome = nome;
@@ -23,9 +25,13 @@ public class Documento implements Comparable<Documento> {
         this.prioridade = prioridade;
     }
 
-    public Documento(int prioridade){
-        this.prioridade = prioridade;
+    public Documento(int senhaNormal){ this.senhaNormal = senhaNormal; }
+
+    public Documento(String senhaPrioritaria){
+        this.senhaPrioritaria = senhaPrioritaria;
     }
+
+    public Documento(){}
 
     public int getPrioridade() {
         return prioridade;
@@ -60,7 +66,7 @@ public class Documento implements Comparable<Documento> {
                 '}';
     }
 
-    @Override
+    /*@Override
     public int compareTo(@NotNull Documento o) {
         //obj1 > obj2 retorna > 0 (1)
         //ojb1 < obj2 retorna < 0 (-1)
@@ -72,7 +78,7 @@ public class Documento implements Comparable<Documento> {
         }
 
         return 0;
-    }
+    }*/
 
 }
 

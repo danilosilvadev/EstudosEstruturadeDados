@@ -1,6 +1,7 @@
 package Queues.Exercícios;
 
-import java.util.PriorityQueue;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by sg-0036936 on 26/09/2016.
@@ -20,40 +21,49 @@ public class E02 {
 
     public static void main(String[] args) {
 
-        PriorityQueue<Documento> pessoas = new PriorityQueue<>();
-
-        final int prioritaria = 1;
-        final int normal = 2;
-
-        int contador;
-
-        //Criar duas listas Queues normais uma
-        // prioritária e outra normal e por os obj1 e obj2 aqui dentro
-        for (contador = 0; contador < 4; contador++) {
-            if (contador > 3) {
-                //Obj1
-                contador = 0;
-            } else {
-                //Obj2
-            }
-        }
-
-
-        pessoas.add(new Documento(prioritaria, "Vikka"));
-        pessoas.add(new Documento(normal, "Jemma"));
-        pessoas.add(new Documento(normal, "Sid"));
-        pessoas.add(new Documento(prioritaria, "Ayunsabah"));
-        pessoas.add(new Documento(prioritaria, "Olic"));
-        pessoas.add(new Documento(normal, "Sid"));
-        pessoas.add(new Documento(prioritaria, "Rudy"));
-        pessoas.add(new Documento(prioritaria, "Husky"));
-
+        String pessoas = adiciona();
         System.out.println(pessoas);
-
 
     }
 
+    public static String adiciona() {
 
+        //Criar duas listas Queues normais uma
+        // prioritária e outra normal e por os obj1 e obj2 aqui dentro
 
+        Queue<Prioritarios> prioritarios = new LinkedList<>();
+        Queue<Normais> normais = new LinkedList<>();
 
+        prioritarios.add(new Prioritarios("Vikka"));
+        normais.add(new Normais("Jemma"));
+        normais.add(new Normais("Sid"));
+        prioritarios.add(new Prioritarios("Ayunsabah"));
+        prioritarios.add(new Prioritarios("Olic"));
+        normais.add(new Normais("Jack Rymes"));
+        prioritarios.add(new Prioritarios("Rudy"));
+        prioritarios.add(new Prioritarios("Husky"));
+
+        int contador;
+
+        //prioritarios.addAll(normais);
+
+        for (contador = 0; contador <= 4; contador++) {
+            if (prioritarios.size() != 0 && contador <= 3){
+                prioritarios.add(new Prioritarios());
+                System.out.println(prioritarios);
+            } else if(normais.size() != 0){
+                normais.add(new Normais());
+                contador = 0;
+                System.out.println(normais);
+
+            } else {
+
+                System.out.println("A fila acabou.");
+
+                }
+        }
+
+        return null;
+    }
 }
+
