@@ -1,0 +1,13 @@
+Classe dependente e classe servidora já tá no nome o que é.
+
+Responsabilidades públicas são métodos e variáveis públicas.
+
+Quando crio responsabilidades públicas?
+
+Quando você quer colaborar com outra classe.
+
+Quando crio responsabilidades privadas?
+
+Quando você quer colaborar com responsabilidades públicas da mesma classe. Não faz sentido criar uma responsabilidade privada se ela não colaborar com uma pública, mesmo que colabore com outra privada.
+
+E responsabilidades privadas não são herdadas em nenhuma hipótese.

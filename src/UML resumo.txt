@@ -1,0 +1,23 @@
+UML
+
++public
+-private
+#protected
+
+Nome da classe
+Variáveis(primeiro privados)
+Métodos(primeiro privados)
+
+Dois tipos de setas:
+
+Seta sem preenchimento é de classes colaboradoras por agregação.(Não depende).
+
+Seta com preenchimento é de classes colaboradoras por composição(Depende).
+
+A direção da seta é da classe colaboradora para a colaborada e os números são dos objetos em questão.
+
+Por exemplo:
+
+Uma classe carro chama 4 objetos da classe roda. Pra cada classe carro precisarei de 4 rodas.
+
+Carro.class 1 -----> 4 Roda.class
