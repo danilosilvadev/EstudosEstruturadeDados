@@ -21,3 +21,5 @@ Por exemplo:
 Uma classe carro chama 4 objetos da classe roda. Pra cada classe carro precisarei de 4 rodas.
 
 Carro.class 1 -----> 4 Roda.class
+
+PS: Responsabilidades privadas não precisam necessariamente fazer parte do UML.
