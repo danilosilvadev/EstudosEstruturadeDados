@@ -23,3 +23,7 @@ Uma classe carro chama 4 objetos da classe roda. Pra cada classe carro precisare
 Carro.class 1 -----> 4 Roda.class
 
 PS: Responsabilidades privadas não precisam necessariamente fazer parte do UML.
+
+Resumo geral:
+
+https://msdn.microsoft.com/pt-br/library/dd409437.aspx
